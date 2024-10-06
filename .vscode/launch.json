@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "Debug",
+            "preLaunchTask": "Build",
+            "program": "${workspaceFolder}/build/${relativeFileDirname}",
+            "windows": {
+                "program": "${workspaceFolder}/build/${relativeFileDirname}.exe",
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "Debug tests",
+            "preLaunchTask": "Test",
+            "program": "${workspaceFolder}/build/${relativeFileDirname}-tests",
+            "windows": {
+                "program": "${workspaceFolder}/build/${relativeFileDirname}-tests.exe",
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
