@@ -2,28 +2,46 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug",
             "type": "lldb",
             "request": "launch",
-            "name": "Debug",
             "preLaunchTask": "Build",
             "program": "${workspaceFolder}/build/${relativeFileDirname}",
-            "windows": {
-                "program": "${workspaceFolder}/build/${relativeFileDirname}.exe",
-            },
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}/build"
         },
         {
+            "name": "Debug tests",
             "type": "lldb",
             "request": "launch",
-            "name": "Debug tests",
             "preLaunchTask": "Test",
             "program": "${workspaceFolder}/build/${relativeFileDirname}-tests",
-            "windows": {
-                "program": "${workspaceFolder}/build/${relativeFileDirname}-tests.exe",
-            },
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}/build"
+        },
+        {
+            "name": "(Windows) Debug",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "preLaunchTask": "Build",
+            "program": "${workspaceFolder}\\build\\${relativeFileDirname}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}\\build",
+            "environment": [],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "(Windows) Debug tests",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "preLaunchTask": "Test",
+            "program": "${workspaceFolder}\\build\\${relativeFileDirname}-tests.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}\\build",
+            "environment": [],
+            "console": "integratedTerminal"
         }
     ]
 }
