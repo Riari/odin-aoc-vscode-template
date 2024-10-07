@@ -1,3 +1,3 @@
 {
-    "recommendations": ["ms-vscode.cpptools", "danielgavin.ols"]
+    "recommendations": ["vadimcn.vscode-lldb", "danielgavin.ols"]
 }
