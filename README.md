@@ -15,6 +15,8 @@ Available launch configurations:
 * **Debug:** Build and debug the current file's package.
 * **Debug tests:** Build and debug any tests available in the current file's package.
 
+There are also Windows variants of the launch configurations using vsdbg.
+
 > [!NOTE]
 > The _Debug tests_ launch configuration will execute the tests twice - once without a debugger and again with, because `odin test` both builds and runs the tests. If I can figure out how to make it only build them, I'll update the config.
 
