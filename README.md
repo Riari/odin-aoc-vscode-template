@@ -1,8 +1,10 @@
 # Odin Advent of Code VS Code template
 
-This is a basic template to get started with [Odin](https://odin-lang.org/) in VS Code. It's set up with Advent of Code in mind.
+This is a basic template to get started with [Odin](https://odin-lang.org/) in VS Code. It's set up with Advent of Code in mind and makes use of these extensions:
 
-You should have the **C/C++** and **Odin Language** extensions installed before using this.
+* [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) (Linux or macOS)
+* [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (Windows)
+* [Odin Language](https://marketplace.visualstudio.com/items?itemName=DanielGavin.ols)
 
 Available tasks:
 
