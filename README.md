@@ -20,7 +20,7 @@ Available launch configurations:
 There are also Windows variants of the launch configurations using vsdbg.
 
 > [!NOTE]
-> The _Debug tests_ launch configuration does not build the tests. This is because the only way to build the test executable is with `odin test`, which automatically executes the tests after building, meaning any test failures would prevent the debug adapter from starting a debug session.
+> The **Debug tests** launch configuration does not build the tests. This is because the only way to build the test executable is with `odin test`, which automatically executes the tests after building, meaning any test failures would prevent the debug adapter from starting a debug session.
 >
 > To work around this, you should manually run the **Test** task before using the **Debug tests** launch config to ensure it's using an up-to-date binary.
 
