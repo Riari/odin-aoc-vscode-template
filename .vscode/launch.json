@@ -14,7 +14,6 @@
             "name": "Debug tests",
             "type": "lldb",
             "request": "launch",
-            "preLaunchTask": "Test",
             "program": "${workspaceFolder}/build/${relativeFileDirname}-tests",
             "args": [],
             "cwd": "${fileDirname}"
@@ -35,7 +34,6 @@
             "name": "(Windows) Debug tests",
             "type": "cppvsdbg",
             "request": "launch",
-            "preLaunchTask": "Test",
             "program": "${workspaceFolder}\\build\\${relativeFileDirname}-tests.exe",
             "args": [],
             "stopAtEntry": false,
