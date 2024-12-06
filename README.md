@@ -9,7 +9,8 @@ This is a basic template to get started with [Odin](https://odin-lang.org/) in V
 Available tasks:
 
 * **Init:** Create a package in the workspace with the provided directory name. This writes a `main.odin` with some boilerplate as well as an empty `input` file.
-* **Build:** Build the package of the current file's package.
+* **Build:** Build the package of the current file's directory.
+* **Run:** Run the current file's package.
 * **Test:** Build and run any tests available in the current file's package.
 
 Available launch configurations:
